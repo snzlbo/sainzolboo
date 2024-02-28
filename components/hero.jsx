@@ -105,6 +105,7 @@ export const HeroSection = () => {
         </div>
         <hr className="my-40 border border-zinc-700" />
         <motion.h1
+          id="about"
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{

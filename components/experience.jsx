@@ -6,6 +6,7 @@ export const ExperienceSection = () => {
   return (
     <div className="relative mx-8 flex min-h-screen flex-col overflow-hidden">
       <motion.h1
+        id="experience"
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

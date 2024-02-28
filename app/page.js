@@ -10,7 +10,7 @@ import { ProjectsSection } from "@/components/projects";
 
 export default function Home() {
   return (
-    <div className="bg-zinc-950">
+    <div className="bg-zinc-950 scroll-smooth">
       <NavBar navItems={menu} />
       <HeroSection />
       <AdvantageSection advantages={advantages} />
