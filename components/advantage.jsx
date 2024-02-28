@@ -6,7 +6,7 @@ import { BentoGrid, BentoGridItem } from "@/components/reuseables/bento";
 
 export const AdvantageSection = ({ advantages }) => {
   return (
-    <div className="mx-8 my-24 md:my-40 grid">
+    <div className="mx-8 my-24 grid md:my-40">
       <hr className="border border-zinc-700" />
       <motion.h1
         initial={{ opacity: 0.5, y: 30 }}
@@ -17,7 +17,7 @@ export const AdvantageSection = ({ advantages }) => {
           ease: "easeInOut",
         }}
         className={
-          "bg-zinc-900/[50] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent text-5xl font-bold relative z-10 text-center mt-40 py-4"
+          "relative z-10 mt-40 bg-zinc-900/[50] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-4 text-center text-5xl font-bold text-transparent"
         }
       >
         My Advantage
@@ -30,7 +30,7 @@ export const AdvantageSection = ({ advantages }) => {
           duration: 0.5,
           ease: "easeInOut",
         }}
-        className="my-24 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-12"
+        className="my-24 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-6 lg:gap-12"
       >
         {advantages.map((advantage, idx) => (
           <AdvantageCard
@@ -48,14 +48,14 @@ export const AdvantageSection = ({ advantages }) => {
 
 const AdvantageCard = ({ icon, title, percent }) => {
   return (
-    <div className="flex group flex-col items-center justify-center space-y-6">
-      <div className="bg-zinc-900 border border-zinc-700 w-full rounded-full px-8 pt-16 pb-12 items-center flex flex-col space-y-8">
+    <div className="group flex flex-col items-center justify-center space-y-6">
+      <div className="flex w-full flex-col items-center space-y-8 rounded-full border border-zinc-700 bg-zinc-900 px-8 pb-12 pt-16">
         <motion.div
           whileHover={{
             scale: 1.2,
             transition: { duration: 0.3 },
           }}
-          className="flex grayscale-0 md:grayscale  group-hover:grayscale-0 items-end align-middle"
+          className="flex items-end align-middle  grayscale-0 group-hover:grayscale-0 md:grayscale"
         >
           {icon}
         </motion.div>

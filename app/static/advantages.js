@@ -9,22 +9,26 @@ import {
   IconBrandMysql,
   IconBrandPython,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export const advantages = [
   {
     title: "Figma",
     percent: "95%",
     icon: (
-      <img
+      <Image
         src="/images/advantages/figma.png"
-        className="h-24 align-middle w-auto"
+        alt="Figma"
+        width={64}
+        height={96}
+        className="h-24 w-auto align-middle"
       />
     ),
   },
   {
     title: "Next.js/Nuxt.js",
     percent: "94%",
-    icon: <IconBrandNextjs className="h-24 w-auto text-[#222222]" />,
+    icon: <IconBrandNextjs className="h-24 w-auto text-[#8a7382]" />,
   },
   {
     title: "Graphql",

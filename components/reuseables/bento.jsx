@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import { motion } from "framer-motion";
 import { ClearButton } from "./clear-button";
+import Image from "next/image";
 
 export const BentoGrid = ({ className, children }) => {
   return (
@@ -29,6 +30,8 @@ export const BentoGridItem = ({
   description,
   link,
   img,
+  width,
+  height,
 }) => {
   return (
     <div
@@ -39,10 +42,16 @@ export const BentoGridItem = ({
     >
       {header}
       <div className="text-zinc-100 transition duration-200 group-hover/bento:translate-x-2">
-        <div className="h-40 w-auto px-2 flex items-center">
-          <img src={img} alt={title} className="h-24 object-contain" />
+        <div className="flex h-40 w-auto items-center px-2">
+          <Image
+            width={width}
+            height={height}
+            src={img}
+            alt={title}
+            className="h-24 object-contain"
+          />
         </div>
-        <div className="flex flex-row justify-between items-end">
+        <div className="flex flex-row items-end justify-between">
           <div className="flex flex-col">
             <div className="my-2 text-lg font-medium text-zinc-100">
               {title}

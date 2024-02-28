@@ -16,7 +16,7 @@ export function ProjectsSection({ items }) {
           ease: "easeInOut",
         }}
         className={
-          "bg-zinc-900/[50] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent text-5xl font-bold relative z-10 text-center mt-16 py-4"
+          "relative z-10 mt-16 bg-zinc-900/[50] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-4 text-center text-5xl font-bold text-transparent"
         }
       >
         My Latest Projects
@@ -40,7 +40,9 @@ export function ProjectsSection({ items }) {
               description={item.description}
               img={item.imageSrc}
               link={item.link}
-              className={i === 0 || i === 6 ? "md:col-span-2" : ""}
+              width={item.width}
+              height={item.height}
+              className={i === 0 ? "md:col-span-2" : ""}
             />
           ))}
         </BentoGrid>
