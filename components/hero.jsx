@@ -119,12 +119,12 @@ export const HeroSection = () => {
         >
           <IconQuote className="size-8 text-primary" />
           <span className="w-3/4 bg-zinc-900/[50] bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-3xl text-transparent">
-            `I&apos;m a full-stack software engineer and UI/UX designer with 2.5
+            I&apos;m a full-stack software engineer and UI/UX designer with 2.5
             years of experience, specializing in user-friendly web applications
             and AI projects like chatbot development. My background includes
             impactful work in startup and AI-based enterprise environments,
             particularly in Japan. I&apos;m skilled in data manipulation for
-            reliable systems.`
+            reliable systems.
           </span>
           <IconQuote className="size-8 self-end text-primary" />
         </motion.h1>

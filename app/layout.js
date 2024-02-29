@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Poiret_One } from "next/font/google";
 import "@/assets/css/globals.css";
 import { cn } from "@/utils/cn";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poiret_One({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio",
